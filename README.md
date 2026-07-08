@@ -16,14 +16,14 @@ Bare-metal, register-level C — no HAL/LL libraries. Each peripheral has its ow
 
     File                     Responsibility 
 
- **main.c**             System init, main control loop, magnitude calculation, integer `sq_root()` 
- **SPI.c** |            SPI1 GPIO/peripheral init, byte send/receive, chip-select control 
- **LIS302DL_ACC.c**     Accelerometer register read/write, 3-axis data acquisition, WHO_AM_I check 
- **I2C_LCD.c**          I2C1 init, PCF8574-based 4-bit LCD driver (init, cursor, print) 
- **Uart.c**             USART2 init, RX polling, Bluetooth command handler (state machine) 
- **Timer.c**            TIM2 PWM init (dual channel), motor direction logic, motor stop 
- **ADC_LDR.c**          ADC1 single-channel init for the LDR 
- **syscalls.c**         Newlib syscall stubs (ITM-based `printf` redirection, heap management) 
+- **main.c**             System init, main control loop, magnitude calculation, integer `sq_root()` 
+ -**SPI.c** |            SPI1 GPIO/peripheral init, byte send/receive, chip-select control 
+ -**LIS302DL_ACC.c**     Accelerometer register read/write, 3-axis data acquisition, WHO_AM_I check 
+-**I2C_LCD.c**          I2C1 init, PCF8574-based 4-bit LCD driver (init, cursor, print) 
+ -**Uart.c**             USART2 init, RX polling, Bluetooth command handler (state machine) 
+ -**Timer.c**            TIM2 PWM init (dual channel), motor direction logic, motor stop 
+ -**ADC_LDR.c**          ADC1 single-channel init for the LDR 
+ -**syscalls.c**         Newlib syscall stubs (ITM-based `printf` redirection, heap management) 
 
  ## Build Environment
 
