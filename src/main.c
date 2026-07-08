@@ -26,15 +26,7 @@ int main(void)
 	long int temp1,temp2,j,count;
 	long int mag;
 	char magnitude[50];
-	/*if(UART->SR & (1<<7))
-	{
-		UART->DR = 'A';
-		delay(20000);
-		UART->DR = 'X';
-		delay(20000);
-		UART->DR = 'Y';
-		delay(20000);
-	}*/
+	
 	//GPIOB->ODR 	|= (1<<0); //IN1 ON PB0
 		//	delay(500000);
 	LCD_SetCursor(0,0);
